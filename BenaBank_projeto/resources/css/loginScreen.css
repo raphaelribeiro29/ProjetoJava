@@ -1,0 +1,46 @@
+/* CSS for Login Screen Default theme */
+
+.root{
+	-fx-background-color: #045920;
+}
+
+.btnEntrarUser{
+	-fx-background-radius: 7em;
+
+}
+
+.edit_login_senha{
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 0,0,5,5 );
+
+}
+
+#lbLogo {
+   -fx-font-size: 64px;
+   -fx-text-fill: rgb(238,238,236);
+   -fx-font-family: "Arial Black";
+   -fx-fill:#818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.btnEntrar {
+	-fx-font-size: 18pt;
+	-fx-text-fill: rgb(81,81,81);
+	-fx-font-family: "Arial Black";
+	-fx-background-radius: 5px;
+}
+
+.btnEntrar:hover{
+	/*(-fx-font-size: 12pt;*/
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 3,3,3,1 );
+}
+
+.imgAbout{
+	-fx-graphic: url("../images/info_logo.png");
+	-fx-graphic-text-gap: 0.0 ;
+	-fx-background-radius: 8em;
+	-fx-background-color: transparent;
+}
+
+.imgAbout:hover{
+	-fx-background-color: rgb(52,101,164);
+}

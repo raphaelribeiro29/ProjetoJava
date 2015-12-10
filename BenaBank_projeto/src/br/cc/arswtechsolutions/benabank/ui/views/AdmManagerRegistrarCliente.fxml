@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cc.arswtechsolutions.benabank.ui.controllers.AdmManagerRegistrarClienteController">
+	<children>
+		<Button fx:id="btnCancelar" layoutX="391.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnCancelarOnAction" prefHeight="30.0" prefWidth="92.0" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Cancelar" />
+		<Button fx:id="btnSalvar" layoutX="501.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnSalvarOnAction" prefHeight="30.0" prefWidth="78.0" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Salvar" />
+		<Label layoutX="50.0" layoutY="82.0" styleClass="labelText" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Nome" />
+		<Label layoutX="408.0" layoutY="81.0" styleClass="labelText" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="CPF" />
+		<TextField fx:id="editNome" layoutX="50.0" layoutY="105.0" prefHeight="25.0" prefWidth="342.0" />
+		<TextField fx:id="editCPF" layoutX="408.0" layoutY="104.0" prefHeight="25.0" prefWidth="163.0" />
+		<Label id="lbtitle" layoutX="156.0" layoutY="30.0" styleClass="labelTitle" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Cadastro de Cliente">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="50.0" layoutY="144.0" styleClass="labelText" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Agência" />
+		<Label layoutX="224.0" layoutY="144.0" styleClass="labelText" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Conta" />
+		<Label layoutX="369.0" layoutY="144.0" styleClass="labelText" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Senha" />
+		<TextField fx:id="editConta" layoutX="224.0" layoutY="170.0" prefHeight="25.0" prefWidth="129.0" />
+		<PasswordField fx:id="editSenha" layoutX="369.0" layoutY="170.0" />
+      <TextField fx:id="editAgencia" layoutX="50.0" layoutY="170.0" prefHeight="25.0" prefWidth="163.0" />
+      <Label layoutX="50.0" layoutY="206.0" styleClass="labelText" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Saldo inicial" />
+      <RadioButton fx:id="rbContaCorrente" layoutX="236.0" layoutY="236.0" mnemonicParsing="false" selected="true" styleClass="radioText" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Conta corrente">
+         <toggleGroup>
+            <ToggleGroup fx:id="contaEscola" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbContaPoupanca" layoutX="370.0" layoutY="236.0" mnemonicParsing="false" styleClass="radioText" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Conta poupança" toggleGroup="$contaEscola">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </RadioButton>
+      <Label layoutX="222.0" layoutY="206.0" styleClass="labelText" stylesheets="@../../../../../../../resources/css/clienteRegisterScreen.css" text="Tipo da conta" />
+      <TextField fx:id="editSaldoInicial" layoutX="50.0" layoutY="232.0" />
+	</children>
+</AnchorPane>

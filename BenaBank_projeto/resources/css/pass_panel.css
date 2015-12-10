@@ -1,0 +1,14 @@
+.button {
+	-fx-background-radius: 5.0em;
+	-fx-effect: dropshadow( one-pass-box , black , 8 , 0.2 , 2 , 0 );
+}
+
+.root {
+	-fx-background-color: darkgrey ;
+}
+
+
+#passwordfield {
+	-fx-background-color: darkcyan ;
+	-fx-effect: dropshadow(one-pass-box , black , 1.4 , 0.8 , 1, 3 );
+}

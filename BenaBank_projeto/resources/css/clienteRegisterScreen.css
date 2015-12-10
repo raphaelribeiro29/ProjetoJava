@@ -1,0 +1,29 @@
+/* CSS for Login Screen Default theme */
+
+.labelText{
+	-fx-font-size: 10pt;
+	-fx-font-family: "Arial Black";
+	-fx-text-fill: rgb(0, 0, 0);
+	-fx-opacity: 1.0;
+}
+
+.labelTitle{
+	-fx-font-size: 20pt;
+	-fx-font-family: "Arial Black";
+	-fx-text-fill: rgb(0, 0, 0);
+	-fx-opacity: 1.0;
+}
+
+.radioText{
+	-fx-font-family: "Arial Black";
+	-fx-text-fill: rgb(0, 0, 0);
+	-fx-opacity: 1.0;
+}
+
+.button{
+	-fx-font-size: 10pt;
+	-fx-font-family: "Arial Black";
+	-fx-text-fill: rgb(255, 255, 255);
+	-fx-opacity: 1.0;
+	-fx-background-color: #045920;
+}

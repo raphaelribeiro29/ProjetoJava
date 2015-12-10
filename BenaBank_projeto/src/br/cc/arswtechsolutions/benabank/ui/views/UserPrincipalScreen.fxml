@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane prefHeight="445.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cc.arswtechsolutions.benabank.ui.controllers.UserPrincipalScreenController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0">
+         <children>
+             <HBox prefHeight="99.0" prefWidth="500.0">
+               <children>
+                  <ImageView fitHeight="107.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../resources/images/logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox>
+                     <children>
+                        <VBox prefHeight="107.0" prefWidth="111.0">
+                           <children>
+                              <Label textFill="#0c831c">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="223.0" text="Cliente:" textAlignment="RIGHT">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="98.0" text="Agência:" textAlignment="RIGHT">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="188.0" text="Conta: " textAlignment="RIGHT">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="98.0" text="Tipo:" textAlignment="RIGHT">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="108.0" text="Saldo: " textAlignment="RIGHT">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="110.0" prefWidth="245.0">
+                           <children>
+                              <Label text="Bena Bank" textFill="#0c831c">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lbClienteNome" prefHeight="15.0" prefWidth="223.0" text="Swellington Soares">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lbAgenciaNome" text="Agência: xxx-009">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lbContaNome" text="Conta: s-009">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lbContaTipoNome" text="Tipo: Corrente">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lbSaldo" text="Saldo: R$ 10,00">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <GridPane hgap="40.0" prefHeight="193.0" prefWidth="500.0" vgap="40.0" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="50.0" top="50.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Button fx:id="btnSaque" mnemonicParsing="false" onAction="#btnOnAction" prefHeight="62.0" prefWidth="219.0" text="Saque" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnRelatorio" mnemonicParsing="false" onAction="#btnOnAction" prefHeight="57.0" prefWidth="219.0" text="Relatório" GridPane.columnIndex="1" />
+                  <Button fx:id="btnTransferencia" mnemonicParsing="false" onAction="#btnOnAction" prefHeight="62.0" prefWidth="219.0" text="Transferência" GridPane.rowIndex="1" />
+                  <Button fx:id="btnDeposito" mnemonicParsing="false" onAction="#btnOnAction" prefHeight="62.0" prefWidth="219.0" text="Depósito" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <StackPane alignment="BOTTOM_RIGHT" prefHeight="48.0" prefWidth="500.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="btnSair" mnemonicParsing="false" onAction="#btnOnAction" prefHeight="25.0" prefWidth="102.0" text="Sair">
+                     <StackPane.margin>
+                        <Insets bottom="5.0" right="5.0" />
+                     </StackPane.margin>
+                  </Button>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

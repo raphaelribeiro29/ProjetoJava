@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox fx:id="vBoxMain" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" styleClass=".imgAbout" stylesheets="@../../../../../../../resources/css/loginScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cc.arswtechsolutions.benabank.ui.controllers.UserLoginScreenController">
+   <children>
+      <HBox prefHeight="130.0" prefWidth="603.0">
+         <children>
+            <ImageView fitHeight="127.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../../../../../../resources/images/logo.jpg" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="137.0" prefWidth="432.0">
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="376.0" text="Bena Bank ">
+                     <font>
+                        <Font name="Georgia Bold" size="55.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.10740740740740741" />
+                              <Stop color="#378d37" offset="0.38" />
+                              <Stop color="#12ab3e" offset="0.6800000000000003" />
+                              <Stop color="#92ed8e" offset="0.877777777777778" />
+                              <Stop color="#92ed8e" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <effect>
+                        <Reflection bottomOpacity="0.02" fraction="0.74" topOpacity="0.23" />
+                     </effect>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="177.0" text="ARSW" textFill="#f20909">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <effect>
+                              <Glow level="0.6" />
+                           </effect>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="177.0" text="Technology Solution">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <effect>
+                              <Glow level="0.8" />
+                           </effect>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <StackPane prefHeight="373.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="363.0" prefWidth="461.0" StackPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#afc2d3" height="173.0" stroke="BLACK" strokeType="INSIDE" width="275.0">
+                     <effect>
+                        <Glow level="0.54" />
+                     </effect>
+                  </Rectangle>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="173.0" prefWidth="275.0">
+                     <children>
+                        <VBox prefHeight="173.0" prefWidth="234.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="105.0" text="Conta:">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="27.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="106.0" text="Agência:">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="19.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="143.0" prefWidth="267.0">
+                           <children>
+                              <TextField fx:id="editConta">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="editAgencia" />
+                              <Button fx:id="btnLogin" defaultButton="true" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="146.0" styleClass="btnEntrarUser" stylesheets="@../../../../../../../resources/css/loginScreen.css" text="Login">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <effect>
+                                    <Reflection fraction="0.7" topOpacity="0.53" />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="20.0" top="30.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <StackPane.margin>
+                  <Insets left="165.0" top="90.0" />
+               </StackPane.margin></Pane>
+            <ImageView fx:id="btnAdmScreen" fitHeight="54.0" fitWidth="64.0" onMouseClicked="#BtnAdminScreenOnClick" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_LEFT">
+               <image>
+                  <Image url="@../../../../../../../resources/images/administrator-icon.png" />
+               </image>
+               <effect>
+                  <DropShadow spread="0.33" />
+               </effect>
+            </ImageView>
+         </children>
+      </StackPane>
+   </children>
+</VBox>

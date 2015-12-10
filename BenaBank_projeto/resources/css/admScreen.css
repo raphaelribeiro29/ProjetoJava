@@ -1,0 +1,19 @@
+/* CSS for Login Screen Default theme */
+
+.root{
+	-fx-background-color: #045920;
+}
+
+#menuBar {
+	-fx-background-color: #818181;
+	-fx-effect: innershadow( three-pass-box , rgba(65,168,39, 0.7) , 6, 0.2 , -5.0 , -5.0 );
+}
+
+.toolsBar{
+	-fx-background-color:  #73B861;
+}
+
+.menuText {
+	-fx-text-fill:rgb(255,255,255);
+
+}

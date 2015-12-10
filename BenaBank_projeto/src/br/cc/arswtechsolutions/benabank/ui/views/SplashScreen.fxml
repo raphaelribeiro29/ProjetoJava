@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="522.0" style="-fx-background-color: #045920;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cc.arswtechsolutions.benabank.ui.controllers.SplashScreenController">
+   <children>
+      <ImageView fitHeight="134.0" fitWidth="163.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../resources/images/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="380.0" layoutY="174.0" prefHeight="19.0" prefWidth="128.0" text="Anderson Eraldo" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="331.0" layoutY="193.0" prefHeight="19.0" prefWidth="177.0" text="Raphael Ribeiro" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="354.0" layoutY="214.0" prefHeight="19.0" prefWidth="154.0" text="Swellington Soares" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="394.0" layoutY="233.0" prefHeight="19.0" prefWidth="114.0" text="Welton Matos" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbCarregando" alignment="TOP_LEFT" layoutX="14.0" layoutY="263.0" prefHeight="19.0" prefWidth="492.0" text="Carregando..." textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="pbCarregando" layoutX="12.0" layoutY="289.0" prefHeight="12.0" prefWidth="499.0" progress="0.0" />
+      <Label layoutX="142.0" layoutY="49.0" style="-fx-text-fill: #ffffff;" text="Bena Bank">
+         <font>
+            <Font name="Arial Black" size="59.0" />
+         </font>
+         <effect>
+            <DropShadow color="#3ab25a" height="36.18" radius="17.59" spread="0.2" width="36.18" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

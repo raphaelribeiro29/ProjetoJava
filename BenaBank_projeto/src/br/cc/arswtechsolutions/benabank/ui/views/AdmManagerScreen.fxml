@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cc.arswtechsolutions.benabank.ui.controllers.AdmManagerScreenController">
+   <children>
+      <ImageView fitHeight="431.0" fitWidth="592.0" layoutX="2.0" layoutY="69.0" opacity="0.4" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../resources/images/20151129111114.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="92.0" layoutY="95.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Sistema">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Cadastrar">
+                          <items>
+                            <MenuItem fx:id="mCadastrarCliente" mnemonicParsing="false" onAction="#mCadastrarClienteOnAction" text="Cliente" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Procurar">
+                          <items>
+                            <MenuItem fx:id="mProcurarCliente" mnemonicParsing="false" onAction="#mProcurarClienteOnAction" text="Cliente" />
+                          </items>
+                        </Menu>
+                        <MenuItem fx:id="mSair" mnemonicParsing="false" onAction="#mSairOnAction" text="Sair" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Relatório">
+                  <items>
+                        <MenuItem fx:id="mRelatorioVer" mnemonicParsing="false" onAction="#mRelatorioVerOnAction" text="Ver" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ajuda">
+                  <items>
+                    <MenuItem fx:id="mSobre" mnemonicParsing="false" onAction="#mSobreOnAction" text="Sobre" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button fx:id="btnCadastrarCliente" mnemonicParsing="false" onAction="#btnCadastrarClienteOnAction" text="Cadastrar cliente" />
+                  <Button fx:id="btnProcurarCliente" mnemonicParsing="false" onAction="#btnProcurarClienteOnAction" text="Procurar cliente" />
+                  <Button fx:id="btnRelatorio" mnemonicParsing="false" onAction="#btnRelatorioOnAction" text="Relatório" />
+              </items>
+            </ToolBar>
+            <BorderPane prefHeight="313.0" prefWidth="650.0" VBox.vgrow="SOMETIMES">
+               <center>
+                  <Group fx:id="frame" BorderPane.alignment="CENTER" />
+               </center></BorderPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

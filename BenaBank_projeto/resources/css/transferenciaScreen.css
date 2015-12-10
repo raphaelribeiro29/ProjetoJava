@@ -1,0 +1,7 @@
+.button {
+	-fx-background-radius: 10em;
+}
+
+.button:hover{
+	-fx-background-color: rgb(115,210,22);
+}

@@ -1,0 +1,22 @@
+.background {
+	-fx-background-color: #045920;
+}
+
+
+.label {
+	-fx-font-size: 10pt;
+	-fx-font-family: "Arial Black";
+	-fx-text-fill: white;
+	-fx-opacity: 0.9;
+}
+
+.button {
+	-fx-text-fill: black;
+}
+
+
+#lbtitle{
+	-fx-font-size: 20pt;
+	-fx-text-fill: white;
+	-fx-opacity: 1;
+}

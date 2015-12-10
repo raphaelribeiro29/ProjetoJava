@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass=".root" stylesheets="@../../../../../../../resources/css/loginScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cc.arswtechsolutions.benabank.ui.controllers.AdmLoginScreenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9d0d7" height="146.0" layoutX="141.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="284.0">
+         <effect>
+            <DropShadow color="#188738" height="48.32" radius="28.215000000000003" spread="0.23" width="66.54" />
+         </effect></Rectangle>
+      <Label layoutX="237.0" layoutY="290.0" text="Usuário">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="editLogin" layoutX="162.0" layoutY="319.0" onInputMethodTextChanged="#editLoginTextChanged" prefHeight="35.0" prefWidth="241.0" promptText="Coloque o seu CPF" styleClass="edit_login_senha" />
+      <Button fx:id="btnEntrar" defaultButton="true" layoutX="163.0" layoutY="360.0" mnemonicParsing="false" onAction="#btnEntrarOnAction" prefHeight="42.0" prefWidth="241.0" styleClass="btnEntrar" text="Entrar" />
+      <ImageView fitHeight="167.0" fitWidth="157.0" layoutX="204.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../resources/images/logo2.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbLogo" layoutX="95.0" layoutY="174.0" text="Bena Bank" />
+      <Label alignment="BOTTOM_LEFT" layoutX="110.0" layoutY="471.0" text="Copyright (C) 2015. ARSW Technology Solutions, Inc." textAlignment="RIGHT" textFill="WHITE" />
+      <Button fx:id="btnVoltar" layoutX="494.0" layoutY="459.0" mnemonicParsing="false" onAction="#btnVoltarOnAction" prefHeight="25.0" prefWidth="92.0" text="&lt;&lt; Voltar" />
+   </children>
+</AnchorPane>

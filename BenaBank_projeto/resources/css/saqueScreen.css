@@ -1,0 +1,17 @@
+.root {
+	-fx-background-color: rgb(78,154,6);
+}
+
+
+.label{
+	-fx-text-fill: rgb(255,255,255);
+	-fx-text-fill: rgb(238,238,236);
+   -fx-font-family: "Arial Black";
+   -fx-fill:#818181;
+}
+
+.button {
+	-fx-text-fill: black;
+   -fx-font-family: "Arial Black";
+	-fx-border-radius: 20px;
+}

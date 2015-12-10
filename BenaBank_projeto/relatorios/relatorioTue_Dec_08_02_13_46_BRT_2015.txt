@@ -1,0 +1,35 @@
+BENA BANK 1.0 - AESW TECHNOLOGY SOLUTUIONS. Inc
+Versão: 1.0 alpha
+Ano: 2015
+Relatório: versão 1.0
+Data: Tue Dec 08 02:13:46 BRT 2015
+
+============================================================
+ID: 8
+NOME: Raphael Ribeiro
+CPF: 111.222.333-44
+AGÊNCIA: 77777
+CONTA: 444
+SENHA: 4D54497A4E4455324E7A673D
+SALDO: 10.00
+TIPO DA CONTA: Conta corrente
+
+
+ID: 7
+NOME: Swellington Soares
+CPF: 999.999.999-99
+AGÊNCIA: 99999
+CONTA: 888
+SENHA: 4F546B354F513D3D
+SALDO: 99.00
+TIPO DA CONTA: Conta corrente
+
+
+suporte@benabank.com
+
+Anderson Eraldo
+Rafael Ribeiro
+Swellington Soares
+Welton Matos
+
+============================================================
